@@ -33,7 +33,7 @@ jobs:
       - name: Build and push tag
         run: |
           docker buildx build \
-            --platform linux/amd64,linux/arm64 \
+            --platform linux/amd64 \
             -t a00s/${{ steps.variables.outputs.REPOSITORY_NAME }}:${{ steps.variables.outputs.SOURCE_TAG }} \
             . \
             --push
