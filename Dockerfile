@@ -39,3 +39,5 @@ RUN \
 
 RUN \
     npm install -g serverless
+
+ENV LANG=C.UTF-8
