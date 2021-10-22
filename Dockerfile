@@ -21,6 +21,7 @@ RUN \
     gpg \
     groff \
     software-properties-common \
+    unzip \
     wget
 
 RUN \
