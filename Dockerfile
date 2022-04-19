@@ -20,6 +20,7 @@ RUN \
     git \
     gpg \
     groff \
+    openssh-client \
     software-properties-common \
     unzip \
     wget
