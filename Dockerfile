@@ -44,7 +44,7 @@ RUN \
     docker buildx install
 
 RUN \
-    pip install git+git://github.com/aws/aws-cli.git#$AWSCLI_VERSION && \
+    pip install git+https://github.com/aws/aws-cli.git#$AWSCLI_VERSION && \
     aws configure set cli_follow_urlparam false
 
 RUN \
@@ -57,7 +57,7 @@ RUN \
     apt-mark hold nodejs
 
 RUN \
-    npm install -g serverless
+    npm install -g serverless@~3.14
 
 ENV LANG=C.UTF-8
 ENV POETRY_HOME=/usr/local
